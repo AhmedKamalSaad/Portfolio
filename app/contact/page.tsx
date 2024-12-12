@@ -2,19 +2,17 @@ import Link from "next/link";
 import { ReactNode } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
+import MainSection from "../components/MainSection";
 
 const page = () => {
   return (
-    <section className='"max-w-screen-xl pt-44 mx-auto flex flex-col text-white gap-20'>
-      <h1 className="text-4xl font-black tracking-widest text-center">
-        Contact
-      </h1>
+    <MainSection>
       {array.map((a, i) => (
         <MainDiv text={a.text} contact={a.contact} key={i}>
           {a.icon}
         </MainDiv>
       ))}
-    </section>
+    </MainSection>
   );
 };
 
@@ -60,7 +58,7 @@ const MainDiv = ({ children, text, contact }: props) => {
       <div className="flex flex-col items-center">
         <p className="text-black">{text}</p>
         {typeof contact === "string" ? (
-         <p className="text-red-800">{ contact }</p> 
+          <p className="text-red-800">{contact}</p>
         ) : (
           <Link href={contact.href} className="text-red-800 underline">
             {contact.label}

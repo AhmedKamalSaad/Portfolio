@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Acme, Great_Vibes } from "next/font/google";
-import "./globals.css";
+import { Acme } from "next/font/google";
 import NavBar from "./components/NavBar";
+import "./globals.css";
 
 export const acme = Acme({
   variable: "--font-roboto",

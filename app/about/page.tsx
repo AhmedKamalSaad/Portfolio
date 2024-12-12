@@ -1,12 +1,9 @@
 import Image from "next/image";
-import React from "react";
+import MainSection from "../components/MainSection";
 
 const page = () => {
   return (
-    <section className="max-w-screen-xl pt-44 mx-auto flex flex-col  text-white gap-20 lg:h-[750px] ">
-      <h1 className="text-4xl font-black tracking-widest text-center">
-        About me
-      </h1>
+    <MainSection className="lg:h-[750px]">
       <div className="flex flex-col lg:flex-row justify-between items-center w-full lg:px-6">
         <Image
           alt="My photo"
@@ -44,7 +41,7 @@ const page = () => {
           </div>
         </div>
       </div>
-    </section>
+    </MainSection>
   );
 };
 
