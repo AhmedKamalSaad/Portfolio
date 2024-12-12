@@ -11,6 +11,7 @@ const page = () => {
           src={"/bio.jpg"}
           height={500}
           width={800}
+          priority
           className="object-cover w-1/2 h-full"
         />
         <div className="w-1/2 flex flex-col items-center h-full lg:px-5">
