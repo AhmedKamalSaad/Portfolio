@@ -1,5 +1,6 @@
 import Image from "next/image";
 import MainSection from "../components/MainSection";
+import type { Metadata } from "next";
 
 const page = () => {
   return (
@@ -54,3 +55,7 @@ const imgArray = [
   "/next.png",
   "/git.png",
 ];
+export const metadata: Metadata = {
+  title: "About",
+  description: "Ahmed Kamal Portfolio",
+};

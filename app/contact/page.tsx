@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import MainSection from "../components/MainSection";
+import type { Metadata } from "next";
 
 const page = () => {
   return (
@@ -67,4 +68,8 @@ const MainDiv = ({ children, text, contact }: props) => {
       </div>
     </div>
   );
+};
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Ahmed Kamal Portfolio",
 };

@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import MainSection from "../components/MainSection";
+import type { Metadata } from "next";
 
 const page = () => {
   return (
@@ -32,3 +33,8 @@ const projectsArray = [
     href: "https://coffee-omega-weld.vercel.app",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Ahmed Kamal Portfolio",
+};

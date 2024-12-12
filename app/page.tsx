@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { acme } from "./layout";
 
 export default function Home() {
   return (
     <section
-      className={`relative flex items-center flex-col justify-center h-screen text-center  ${acme.className}  tracking-widest gap-3 overflow-hidden text-white`}
+      className='relative flex items-center flex-col justify-center h-screen text-center tracking-widest gap-3 overflow-hidden text-white'
     >
       <p className="text-2xl font-bold text-rose-800 shadow-lg p-1 ">
         Web Developer

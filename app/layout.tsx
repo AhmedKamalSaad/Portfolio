@@ -1,13 +1,8 @@
+import { acme } from "@/lib/fonts";
 import type { Metadata } from "next";
-import { Acme } from "next/font/google";
 import NavBar from "./components/NavBar";
 import "./globals.css";
 
-export const acme = Acme({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 export const metadata: Metadata = {
   title: "Portfolio",
