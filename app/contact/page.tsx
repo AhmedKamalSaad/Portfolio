@@ -53,10 +53,10 @@ interface props {
 
 const MainDiv = ({ children, text, contact }: props) => {
   return (
-    <div className="max-w-2xl w-full h-fit p-2 flex items-center justify-center mx-auto bg-slate-400 gap-8">
+    <div className="max-w-[350px] w-full h-fit p-2 flex items-center  mx-auto bg-slate-400 gap-8">
       {children}
-      <div className="flex flex-col items-center">
-        <p className="text-black">{text}</p>
+      <div className="flex flex-col items-start ">
+        <p className="text-black ">{text}</p>
         {typeof contact === "string" ? (
           <p className="text-red-800">{contact}</p>
         ) : (
