@@ -29,7 +29,7 @@ export default NavBar;
 const Links = ({ className }: { className?: string }) => {
   return (
     <div className={className}>
-      <ActiveLink href={"/work"}>Selected Work</ActiveLink>
+      <ActiveLink href={"/projects"}>Selected Projects</ActiveLink>
       <ActiveLink href={"/about"}>About</ActiveLink>
       <ActiveLink href={"/contact"}>Contact</ActiveLink>
     </div>
