@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 const page = () => {
   return (
-    <MainSection className="lg:h-[750px]">
+    <MainSection className="lg:h-[750px]" mainText="About Me">
       <div className="flex flex-col lg:flex-row justify-between items-center w-full lg:px-6">
         <Image
           alt="My photo"

@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 const page = () => {
   return (
-    <MainSection>
+    <MainSection mainText="Contact">
       {array.map((a, i) => (
         <MainDiv text={a.text} contact={a.contact} key={i}>
           {a.icon}
