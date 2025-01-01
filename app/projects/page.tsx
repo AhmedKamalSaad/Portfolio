@@ -32,6 +32,11 @@ const projectsArray = [
     img: "/Coffe shop.png",
     href: "https://coffee-omega-weld.vercel.app",
   },
+  {
+    title: "Ecommerce",
+    img: "/Ec.png",
+    href: "https://ecommerce-sigma-mauve-86.vercel.app",
+  },
 ];
 
 export const metadata: Metadata = {
