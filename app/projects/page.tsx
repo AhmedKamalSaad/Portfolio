@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 const page = () => {
   return (
     <MainSection mainText="Selected Projects">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 px-6 md:px-4 lg:px-2 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 px-6 md:px-4 lg:px-2 pb-9 ">
         {projectsArray.map((p, i) => (
           <Card href={p.href} img={p.img} title={p.title} key={i} />
         ))}
@@ -17,6 +17,11 @@ const page = () => {
 export default page;
 
 const projectsArray = [
+  {
+    title: "Games Website",
+    img: "/Games.png",
+    href: "https://games-zeta-orcin.vercel.app/",
+  },
   {
     title: "Realestate",
     img: "/Realestate.png",
