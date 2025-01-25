@@ -1,23 +1,25 @@
-import Image from "next/image";
+import {
+  About,
+  Contact,
+  Hero,
+  NavBar,
+  Projects,
+  Skills,
+} from "@/app/_components/Index";
 
-export default function Home() {
+const page = () => {
   return (
-    <section
-      className='relative flex items-center flex-col justify-center h-screen text-center tracking-widest gap-3 overflow-hidden text-white'
-    >
-      <p className="text-2xl font-bold text-rose-800 shadow-lg p-1 ">
-        Web Developer
-      </p>
-      <h1 className="text-6xl font-bold tracking-widest">Ahmed Kamal</h1>
-      <div className="absolute inset-0 bg-transparent backdrop-blur-sm -z-10"></div>
-
-      <Image
-        fill
-        src={"/bubun-das-Jn_6SY02LpE-unsplash.jpg"}
-        alt="bg-img"
-        className=" brightness-50 -z-20 "
-        priority
-      />
-    </section>
+    <>
+      <NavBar />
+      <div className="overflow-hidden max-w-screen-xl px-2  *:py-10 container mx-auto *:space-y-10 *:mx-auto *:overflow-hidden ">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
+    </>
   );
-}
+};
+
+export default page;

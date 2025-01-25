@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
+import typography from "@tailwindcss/typography";
 
 export default {
   darkMode: ["class"],
@@ -13,6 +15,11 @@ export default {
         roboto: ["var(--font-roboto)"],
       },
       colors: {
+        bg: "#EFEFD7",
+        headline: "#1F3FC3",
+        paragraph: "#5f6c7b",
+        Tertiary: "#ef4565",
+        Btn: "#3da9fc",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -61,5 +68,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate, typography],
 } satisfies Config;
