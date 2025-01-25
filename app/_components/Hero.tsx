@@ -16,7 +16,7 @@ const Hero = () => {
           transition={{ duration: 0.9 }}
         >
           <h1 className="text-4xl !leading-[4rem] text-nowrap md:text-5xl tracking-wider text-headline">
-            I am
+            I am{" "}
             <span className=" underline underline-offset-4 decoration-Tertiary">
               Ahmed Kamal
             </span>
@@ -60,7 +60,7 @@ const Hero = () => {
             height={300}
             width={300}
             style={{ width: "auto", height: "auto" }}
-                      />
+          />
         </motion.div>
       </div>
     </section>
