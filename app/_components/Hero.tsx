@@ -9,15 +9,15 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className=" pt-[100px] " id="Home">
-      <div className="flex gap-10 flex-col-reverse md:flex-row max-w-screen-lg items-center w-full mx-auto justify-between px-4 ">
+      <div className="flex gap-10 flex-col-reverse md:flex-row max-w-screen-lg items-center w-full mx-auto justify-between px-4 pt-[25px] ">
         <motion.div
           initial={{ x: "-150%", opacity: 0 }}
           animate={{ x: "0", opacity: 1 }}
           transition={{ duration: 0.9 }}
         >
-          <h1 className="text-4xl !leading-[4rem] text-nowrap md:text-5xl tracking-wider text-headline">
+          <h1 className="text-4xl !leading-[4rem] text-nowrap md:text-5xl tracking-wider text-black ">
             I am{" "}
-            <span className=" underline underline-offset-4 decoration-Tertiary">
+            <span className=" underline underline-offset-4 decoration-Tertiary  text-headline">
               Ahmed Kamal
             </span>
             <br /> Web Developer
@@ -60,6 +60,7 @@ const Hero = () => {
             height={300}
             width={300}
             style={{ width: "auto", height: "auto" }}
+            className="aspect-square max-h-[320px]"
           />
         </motion.div>
       </div>

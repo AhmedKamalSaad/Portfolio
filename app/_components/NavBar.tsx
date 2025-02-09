@@ -41,14 +41,14 @@ const NavBar = () => {
       transition={{ duration: 0.5, ease: "easeInOut" }}
       className="fixed w-full mx-auto py-2 z-50"
     >
-      <nav className="flex gap-3 w-fit text-headline bg-bg bg-opacity-75 border mx-auto py-1 px-2 rounded-full items-center">
+      <nav className="flex gap-3 w-fit text-black bg-bg bg-opacity-75 backdrop-blur-sm border mx-auto py-1 px-2 rounded-full items-center">
         {links.map((link, i) => (
           <button
             title={link.title}
             key={i}
             className={`relative  ${
               activeTab === link.id ? "" : "hover:opacity-80"
-            } transition-colors rounded-full outline-2 outline-sky-400 focus-visible:outline px-2 py-1 text-sm`}
+            } transition-colors rounded-full outline-2 outline-gray-800 focus-visible:outline px-2 py-1 text-sm`}
             onClick={() => {
               handleScroll(link.id);
               setActiveTab(link.id);
@@ -56,12 +56,12 @@ const NavBar = () => {
           >
             {activeTab === link.id && (
               <motion.div
-                className="absolute inset-0 bg-Btn/50  rounded-full"
+                className="absolute inset-0 bg-gray-500/30  rounded-full"
                 layoutId="active-pill"
                 transition={{ type: "spring", duration: "0.6" }}
               ></motion.div>
             )}
-            <div className=" flex gap-2 items-center  mix-blend-darken">
+            <div className=" flex gap-2 items-center  mix-blend-darken ">
               {link.icon}
               <span className="hidden md:block">{link.title}</span>
             </div>
